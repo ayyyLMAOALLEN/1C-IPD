@@ -12,11 +12,9 @@ strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
-    decidingFactor = random.randint(1,100)
-    if decidingFactor >= 50:
-        return 'b'
-    if decidingFactor < 50:
-        return 'c'
+    chicken= ['c','b','c','c','b','c','b','b']
+    stek= random.choice(chicken)
+    return str(stek)
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
